@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8e46e8d1-7fcd-44de-a41a-caf0b20f7e89" name="EHB" url="http://iwtsl.ehb.be/~robbe.vandendooren/WDA/">
+        <fileTransfer mountedRoot="/Volumes/robbe.vandendooren/public_html/WDA" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

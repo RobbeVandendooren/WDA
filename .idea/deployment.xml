@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="EHB">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="wordpress/wp-admin" />
+            <excludedPath path="wordpress/wp-includes" />
+            <excludedPath path="wordpress/.htaccess" />
+            <excludedPath path="wordpress/index.php" />
+            <excludedPath path="wordpress/license.txt" />
+            <excludedPath path="wordpress/readme.html" />
+            <excludedPath path="wordpress/wp-activate.php" />
+            <excludedPath path="wordpress/wp-blog-header.php" />
+            <excludedPath path="wordpress/wp-comments-post.php" />
+            <excludedPath path="wordpress/wp-config-sample.php" />
+            <excludedPath path="wordpress/wp-config.php" />
+            <excludedPath path="wordpress/wp-cron.php" />
+            <excludedPath path="wordpress/wp-links-opml.php" />
+            <excludedPath path="wordpress/wp-load.php" />
+            <excludedPath path="wordpress/wp-login.php" />
+            <excludedPath path="wordpress/wp-mail.php" />
+            <excludedPath path="wordpress/wp-settings.php" />
+            <excludedPath path="wordpress/wp-signup.php" />
+            <excludedPath path="wordpress/wp-trackback.php" />
+            <excludedPath path="wordpress/xmlrpc.php" />
+            <excludedPath path="wordpress/wp-content/themes/twentyfifteen" />
+            <excludedPath path="wordpress/wp-content/themes/twentyfourteen" />
+            <excludedPath path="wordpress/wp-content/themes/twentythirteen" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>

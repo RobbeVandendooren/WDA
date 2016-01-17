@@ -1,0 +1,171 @@
+$primary-color: #ff4148;
+$primary-color-light: $primary-color *1.5;
+
+// Logo
+body {
+  padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+// Nav
+nav {
+  background-color: white!important;
+  border: none!important;
+  box-shadow: 0 2px 10px 0 #888888;
+}
+
+nav li:hover {
+  background-color: $primary-color;
+  color: $primary-color!important;
+}
+
+nav {
+  li a {
+    padding: 35px!important;
+    color: black!important;
+  }
+  .nav-selected {
+    background-color: $primary-color;
+  }
+}
+
+.navbar-brand img {
+  height: 100%!important;
+}
+
+// Links
+a {color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.button {
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  background: $primary-color;
+  border: none;
+}
+
+.button:hover {
+  background: $primary-color-light;
+}
+
+// h1, h2, h3, h4, h5, h6
+h2 {
+  padding: 1% 0 1% 0;
+}
+
+// Images
+.eyecatcher {
+  background: url("../images/amaze.jpg") no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 100%;
+  min-height: 100%;
+  bottom: 0;
+  top: 0;
+  overflow: auto;
+  position: fixed;
+}
+
+// Index
+.cta {
+  height:100%;
+  padding-top: 20%;
+}
+
+// Products
+.post {
+  box-shadow: 0 0 3px 0 #888888;
+}
+
+.post-container {
+  padding: 0 150px 0 150px;
+}
+
+.post-title {
+  padding: 2% 0 1% 0;
+}
+
+.post-description {
+  padding: 3% 5% 3% 5%;
+  margin: auto;
+}
+
+// About
+.map {
+  margin: 3% 0 3% 0;
+}
+
+// Utility classes
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.padding-top {
+  padding-top: 2%;
+}
+
+
+@media(min-width: 768px) {
+  body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  }
+
+  .navbar-fixed-top .navbar-brand {
+    padding: 15px 0;
+  }
+
+  .nav > li > a {
+    padding:20px;
+  }
+
+  .navbar-brand {
+    padding:15px 15px 15px 15px;
+    height: auto;
+  }
+
+  .nav-logo {
+    //margin-bottom: 30px!important;
+  }
+}
+
+@media(max-width: 1200px) {
+  .post-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media(max-width: 991px) {
+  .post-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .center-block {
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar-toggle {
+    background: black;
+  }
+}
