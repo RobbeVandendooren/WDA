@@ -1,0 +1,4 @@
+@mixin box-shadow($time) {
+  -webkit-transition: box-shadow $time; /* Safari */
+  transition: box-shadow $time;
+}

@@ -1,30 +1,56 @@
+/*
+Theme Name: AWD
+Theme URI: www.ehb.be
+Author: Robbe Vandendooren
+Author URI: www.ehb.be
+Description: AWD taak
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "utility";
+@import "mixins/mixins";
+
 $primary-color: #ff4148;
-$primary-color-light: $primary-color *1.5;
+$primary-color-light: $primary-color *.8;
+$font: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-weight: 300;
 
 // Logo
 body {
   padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  font-family: $font!important;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 // Nav
 nav {
+  li {
+    &:hover {
+      background-color: $primary-color;
+      color: $primary-color!important;
+    }
+    a {
+      padding: 35px!important;
+      color: black!important;
+    }
+  }
+
+  .nav-selected {
+    background-color: $primary-color;
+  }
+
   background-color: white!important;
   border: none!important;
   box-shadow: 0 2px 10px 0 #888888;
 }
 
-nav li:hover {
-  background-color: $primary-color;
-  color: $primary-color!important;
-}
-
-nav {
-  li a {
-    padding: 35px!important;
-    color: black!important;
-  }
-  .nav-selected {
-    background-color: $primary-color;
+.navbar-right li:last-child {
+  background-color: $primary-color!important;
+  a {
+    color: white!important;
   }
 }
 
@@ -33,27 +59,36 @@ nav {
 }
 
 // Links
-a {color: white;
+a {
+  color: white!important;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-a:hover {
-  color: white;
-}
-
-.button {
+.button, input[type=submit] {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   background: $primary-color;
   border: none;
-}
+  @include box-shadow(.5s);
+  box-shadow: 0 0 10px 0 #888888;
 
-.button:hover {
-  background: $primary-color-light;
+  &:hover {
+    background: $primary-color-light;
+    box-shadow: 0 0 15px 0 #888888;
+  }
 }
 
 // h1, h2, h3, h4, h5, h6
 h2 {
   padding: 1% 0 1% 0;
+}
+
+// Span
+span {
+  color: $primary-color;
 }
 
 // Images
@@ -69,6 +104,9 @@ h2 {
   position: fixed;
 }
 
+.center-block {
+  max-width: 100%;
+}
 // Index
 .cta {
   height:100%;
@@ -78,10 +116,31 @@ h2 {
 // Products
 .post {
   box-shadow: 0 0 3px 0 #888888;
-}
+  overflow: auto;
+  margin-bottom: 5%;
 
-.post-container {
-  padding: 0 150px 0 150px;
+  a {
+    color: black!important;
+    text-decoration: none!important;
+  }
+
+  p {
+    margin: 0 5% 5% 3%;
+
+    img {
+      margin-bottom: 1%;
+    }
+  }
+
+  small {
+    margin: 5%;
+  }
+
+  @include box-shadow(.5s);
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #888888;
+  }
 }
 
 .post-title {
@@ -98,25 +157,11 @@ h2 {
   margin: 3% 0 3% 0;
 }
 
-// Utility classes
-.vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
+// Category
+.category {
+  text-align: center;
+  margin: 2% 0;
 }
-
-.padding-0 {
-  padding: 0;
-}
-
-.margin-0 {
-  margin: 0;
-}
-
-.padding-top {
-  padding-top: 2%;
-}
-
 
 @media(min-width: 768px) {
   body {
@@ -124,7 +169,7 @@ h2 {
   }
 
   .navbar-fixed-top .navbar-brand {
-    padding: 15px 0;
+    padding: 25px 0 19px 0;
   }
 
   .nav > li > a {
@@ -153,19 +198,33 @@ h2 {
     padding-left: 50px;
     padding-right: 50px;
   }
-
-  .center-block {
-    width: 100%;
-  }
 }
 
 @media(max-width: 768px) {
 
   body {
-    padding-top: 70px;
+    padding-top: 40px;
+
+  }
+
+  .post-container {
+    padding: 3px;
   }
 
   .navbar-toggle {
-    background: black;
+    background: $primary-color!important;
+    border-color: transparent!important;
+    box-shadow: 0 0 2px 0;
+    margin-right: 4%!important;
+
+    &:hover {
+      background: $primary-color-light!important;
+    }
   }
+
+  .navbar-right {
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+  }
+
 }

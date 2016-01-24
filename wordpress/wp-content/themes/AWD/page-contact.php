@@ -10,19 +10,19 @@ get_header(); ?>
 	</div>
 	<div class="row">
 		<div class="col-lg-4 text-center">
-			<h2>Phone</h2>
+			<h2><span>Phone</span></h2>
 			<h3>+04 000 000 00</h3>
 			<h3>+40 444 444 44</h3>
 			<h3>+32 233 322 32</h3>
 		</div>
 		<div class="col-lg-4 text-center">
-			<h2>Mail</h2>
+			<h2><span>Mail</span></h2>
 			<h3>my.mail@mail.mail</h3>
 			<h3>my.boss@mail.boss</h3>
 			<h3>my.sponsor@mail.sponsor</h3>
 		</div>
 		<div class="col-lg-4 text-center">
-			<h2>Address</h2>
+			<h2><span>Address</span></h2>
 			<h3>Fakestreet 123</h3>
 			<h3>0001, Faketown</h3>
 			<h3>Greece</h3>

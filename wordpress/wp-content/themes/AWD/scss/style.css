@@ -1,74 +1,13 @@
-body {
-  padding-top: 100px;
-  /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */ }
-
-nav {
-  background-color: white !important;
-  border: none !important;
-  box-shadow: 0 2px 10px 0 #888888; }
-
-nav li:hover {
-  background-color: #ff4148;
-  color: #ff4148 !important; }
-
-nav li a {
-  padding: 35px !important;
-  color: black !important; }
-nav .nav-selected {
-  background-color: #ff4148; }
-
-.navbar-brand img {
-  height: 100% !important; }
-
-a {
-  color: white; }
-
-a:hover {
-  color: white; }
-
-.button {
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  background: #ff4148;
-  border: none; }
-
-.button:hover {
-  background: #ff626c; }
-
-h2 {
-  padding: 1% 0 1% 0; }
-
-.eyecatcher {
-  background: url("../images/amaze.jpg") no-repeat;
-  background-size: cover;
-  background-clip: border-box;
-  width: 100%;
-  min-height: 100%;
-  bottom: 0;
-  top: 0;
-  overflow: auto;
-  position: fixed; }
-
-.cta {
-  height: 100%;
-  padding-top: 20%; }
-
-.post {
-  box-shadow: 0 0 3px 0 #888888; }
-
-.post-container {
-  padding: 0 150px 0 150px; }
-
-.post-title {
-  padding: 2% 0 1% 0; }
-
-.post-description {
-  padding: 3% 5% 3% 5%;
-  margin: auto; }
-
-.map {
-  margin: 3% 0 3% 0; }
-
+/*
+Theme Name: AWD
+Theme URI: www.ehb.be
+Author: Robbe Vandendooren
+Author URI: www.ehb.be
+Description: AWD taak
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
 .vcenter {
   display: inline-block;
   vertical-align: middle;
@@ -83,13 +22,116 @@ h2 {
 .padding-top {
   padding-top: 2%; }
 
+body {
+  padding-top: 100px;
+  /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-weight: 300;
+  font-size: 18px; }
+
+nav {
+  background-color: white !important;
+  border: none !important;
+  box-shadow: 0 2px 10px 0 #888888; }
+  nav li:hover {
+    background-color: #ff4148;
+    color: #ff4148 !important; }
+  nav li a {
+    padding: 35px !important;
+    color: black !important; }
+  nav .nav-selected {
+    background-color: #ff4148; }
+
+.navbar-right li:last-child {
+  background-color: #ff4148 !important; }
+  .navbar-right li:last-child a {
+    color: white !important; }
+
+.navbar-brand img {
+  height: 100% !important; }
+
+a {
+  color: white !important; }
+  a:hover {
+    text-decoration: none; }
+
+.button, input[type=submit] {
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  background: #ff4148;
+  border: none;
+  -webkit-transition: box-shadow 0.5s;
+  /* Safari */
+  transition: box-shadow 0.5s;
+  box-shadow: 0 0 10px 0 #888888; }
+  .button:hover, input[type=submit]:hover {
+    background: #cc343a;
+    box-shadow: 0 0 15px 0 #888888; }
+
+h2 {
+  padding: 1% 0 1% 0; }
+
+span {
+  color: #ff4148; }
+
+.eyecatcher {
+  background: url("../images/amaze.jpg") no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  width: 100%;
+  min-height: 100%;
+  bottom: 0;
+  top: 0;
+  overflow: auto;
+  position: fixed; }
+
+.center-block {
+  max-width: 100%; }
+
+.cta {
+  height: 100%;
+  padding-top: 20%; }
+
+.post {
+  box-shadow: 0 0 3px 0 #888888;
+  overflow: auto;
+  margin-bottom: 5%;
+  -webkit-transition: box-shadow 0.5s;
+  /* Safari */
+  transition: box-shadow 0.5s; }
+  .post a {
+    color: black !important;
+    text-decoration: none !important; }
+  .post p {
+    margin: 0 5% 5% 3%; }
+    .post p img {
+      margin-bottom: 1%; }
+  .post small {
+    margin: 5%; }
+  .post:hover {
+    box-shadow: 0 0 10px 0 #888888; }
+
+.post-title {
+  padding: 2% 0 1% 0; }
+
+.post-description {
+  padding: 3% 5% 3% 5%;
+  margin: auto; }
+
+.map {
+  margin: 3% 0 3% 0; }
+
+.category {
+  text-align: center;
+  margin: 2% 0; }
+
 @media (min-width: 768px) {
   body {
     padding-top: 100px;
     /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */ }
 
   .navbar-fixed-top .navbar-brand {
-    padding: 15px 0; }
+    padding: 25px 0 19px 0; }
 
   .nav > li > a {
     padding: 20px; }
@@ -104,15 +146,24 @@ h2 {
 @media (max-width: 991px) {
   .post-container {
     padding-left: 50px;
-    padding-right: 50px; }
-
-  .center-block {
-    width: 100%; } }
+    padding-right: 50px; } }
 @media (max-width: 768px) {
   body {
-    padding-top: 70px; }
+    padding-top: 40px; }
+
+  .post-container {
+    padding: 3px; }
 
   .navbar-toggle {
-    background: black; } }
+    background: #ff4148 !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 2px 0;
+    margin-right: 4% !important; }
+    .navbar-toggle:hover {
+      background: #cc343a !important; }
+
+  .navbar-right {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */

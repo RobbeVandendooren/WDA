@@ -9,8 +9,7 @@ get_header(); ?>
 		</div>
 	</div>
 	<div class="row category">
-		<div class="col-sm-6"><a class="button" href="http://iwtsl.ehb.be/~robbe.vandendooren/WDA/wordpress/category/work_in_progress/">Work in Progress</a></div>
-		<div class="col-sm-6"><a class="button" href="http://iwtsl.ehb.be/~robbe.vandendooren/WDA/wordpress/category/milestones/">Milestones</a></div>
+		<div class="col-sm-12"><a class="button" href="index.php">All Posts</a></div>
 	</div>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="row">

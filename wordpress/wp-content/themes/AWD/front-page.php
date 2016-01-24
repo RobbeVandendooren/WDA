@@ -9,6 +9,7 @@
 		<div class="col-lg-12 text-center cta">
 			<h1>The Company</h1>
 			<h2>One of us, One of them</h2>
+
 		</div>
 	</div>
 	<div class="row">
